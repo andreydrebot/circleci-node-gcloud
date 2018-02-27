@@ -1,5 +1,7 @@
 FROM circleci/node
 
+RUN sudo apt-get update && sudo apt-get install -y gettext-base
+
 USER root
 
 ENV CIRCLECI_HOME /home/circleci
